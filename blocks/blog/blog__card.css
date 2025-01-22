@@ -1,0 +1,17 @@
+.blog__card img {
+    margin-bottom: 10px;
+}
+  
+.blog__card h4 {
+    max-width: calc(100% - 1rem);
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: var(--header-font);
+    color: var(--white);
+    transition: 0.3s;
+}
+  
+.blog__card:hover h4 {
+    color: var(--primary-color);
+}
+  

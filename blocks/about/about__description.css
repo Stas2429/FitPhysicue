@@ -1,0 +1,12 @@
+.about__description {
+  max-width: 350px;
+  margin-inline: auto;
+  color: var(--text-light);
+}
+
+@media (width > 768px){
+  .about__description {
+    text-align: left;
+    margin-inline-start: unset;
+  }
+}

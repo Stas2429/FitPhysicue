@@ -1,0 +1,11 @@
+.section__description {
+    color: var(--text-light);
+}
+
+@media (width > 768px){
+
+    .section__description {
+      text-align: left;
+      margin-inline-start: unset;
+    }
+}

@@ -1,0 +1,14 @@
+.header__menu-burger {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--text-dark);
+}
+
+@media (width > 768px){
+  .header__menu-burger {
+    padding: 0;
+    background-color: transparent;
+  }
+}

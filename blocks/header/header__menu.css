@@ -1,0 +1,13 @@
+.header__menu {
+  background-color: var(--text-dark);
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
+@media (width > 768px){
+  .header__menu {
+    position: static;
+    padding: 1.5rem 1rem;
+  }
+}

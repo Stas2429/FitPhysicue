@@ -1,0 +1,28 @@
+.trainer__card {
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+}
+  
+.trainer__card img {
+    width: 100%;
+    border-radius: 10px;
+}
+  
+.trainer__card h2 {
+    margin: 10px 0;
+    color: var(--text-dark);
+}
+  
+.trainer__card p {
+    color: var(--text-light);
+}
+
+@media (width > 540px) {
+    .trainer__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}

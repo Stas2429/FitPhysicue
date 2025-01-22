@@ -1,0 +1,4 @@
+.page {
+  font-family: var(--header-font);
+  scroll-behavior: smooth;
+}

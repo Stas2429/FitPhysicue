@@ -1,0 +1,18 @@
+.membership__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+@media (width > 540px) {
+    .membership__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width > 768px){
+
+  .membership__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

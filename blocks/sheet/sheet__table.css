@@ -1,0 +1,34 @@
+.sheet__table {
+    width: 100%;
+    max-width: var(--max-width);
+    border-collapse: collapse;
+    margin: 10px;
+    font-family: var(--header-font);
+}
+  
+.sheet__table thead {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+  
+.sheet__table th, .sheet__table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--extra-light);
+}
+  
+.sheet__table th {
+    font-weight: bold;
+}
+  
+.sheet__table tbody tr:hover {
+    background-color: var(--extra-light);
+}
+
+.sheet__table tbody td {
+    color: var(--text-dark);
+}
+  
+.sheet__table tbody td:last-child {
+    font-style: var(--header-font);
+}
