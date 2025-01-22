@@ -1,6 +1,8 @@
 # КУРСОВАЯ РАБОТА. Веб-сайт для фитнес-центра
 ## FitPhysicue
 
+Ссылка на проект: https://stas2429.github.io/FitPhysicue/
+
 ## Технологии
 - [WEBSITE PLANET](https://www.websiteplanet.com/ru/)
 - [MindMeister](https://www.mindmeister.com/)
@@ -18,5 +20,3 @@
 - Калькулятор подсчета калорий
 - Таймер обратного отсчета до начала следующего группового занятия
 - Систему уведомлений о предстоящих тренировках
-
-###Ссылка на проект: https://stas2429.github.io/FitPhysicue/
