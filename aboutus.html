@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./pages/style.css" rel="stylesheet">
+  <title>FitPhysique</title>
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body class="page">
+  <header class="header">
+    <nav class="header__menu">
+      <div class="header__menu-items">
+        <div class="header__logo">
+          <a href="index.html"> <img src="./images/logo.png" alt="logo"></a>
+        </div>
+        <div class="header__menu-burger" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="header__links" id="header-links">
+        <li><a href="index.html">Основной</a></li>
+        <li><a href="aboutus.html">О нас</a></li>
+        <li><a href="trainers.html">Тренеры</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="classboard.html">Доска занятий</a></li>
+        <li><a href="instruments.html">Инструменты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about section" id="about">
+    <div class="about__container section__container">
+      <div class="about__info">
+        <h1 class="about__title">О НАС</h1>
+        <p class="about__description">
+          Наша миссия - вдохновлять и поддерживать людей в достижении их целей 
+          в области здоровья и хорошего самочувствия, независимо от их уровня физической 
+          подготовки или образования.  
+        </p>
+      </div>
+      <div class="about__grid">
+        <div class="about__card">
+          <h2>ТРЕНЕРЫ-ПОБЕДИТЕЛИ</h2>
+          <p>
+            Мы гордимся тем, что у нас есть команда преданных и опытных тренеров, 
+            которые стремятся помочь вам добиться успеха.
+          </p>
+        </div>
+        <div class="about__card">
+          <h2>ДОСТУПНАЯ ЦЕНА</h2>
+          <p>
+            Мы считаем, что каждый должен иметь доступ к высококачественным фитнес-залам, 
+            не тратя на это много денег.
+          </p>
+        </div>
+        <div class="about__card">
+          <h2>СОВРЕМЕННОЕ ОБОРУДОВАНИЕ</h2>
+          <p>
+            Будьте на высоте, используя наше самое современное оборудование, 
+            призванное повысить эффективность ваших тренировок.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="session">
+    <div class="session__card">
+      <h3>BODY BUILDING</h3>
+      <p>
+        Скульптурируйте свое тело и наращивайте мышечную массу с помощью 
+        специализированных программ по бодибилдингу в FitPhysique.
+      </p>
+      <button class="session__btn" onclick="openModal('modalBodyBuilding')">
+        ПОДРОБНЕЕ <i class="ri-arrow-right-line"></i>
+      </button>
+    </div>
+    <div class="session__card">
+      <h3>CARDIO</h3>
+      <p>
+        Повысьте частоту сердечных сокращений и увеличьте выносливость с помощью 
+        динамичных кардиотренировок в FitPhysique.
+      </p>
+      <button class="session__btn" onclick="openModal('modalCardio')">
+        ПОДРОБНЕЕ <i class="ri-arrow-right-line"></i>
+      </button>
+    </div>
+    <div class="session__card">
+      <h3>FITNESS</h3>
+      <p>
+        Воспользуйтесь целостным подходом к фитнесу с помощью наших комплексных 
+        фитнес-программ в FitPhysique.
+      </p>
+      <button class="session__btn" onclick="openModal('modalFitness')">
+        ПОДРОБНЕЕ <i class="ri-arrow-right-line"></i>
+      </button>
+    </div>
+    <div class="session__card">
+      <h3>CROSSFIT</h3>
+      <p>
+        Ощутите максимальную нагрузку на все тело благодаря интенсивным занятиям 
+        CrossFit в FitPhysique.
+      </p>
+      <button class="session__btn" onclick="openModal('modalCrossFit')">
+        ПОДРОБНЕЕ <i class="ri-arrow-right-line"></i>
+      </button>
+    </div>
+  </section>
+  
+  <!-- Модальные окна -->
+  <div id="modalBodyBuilding" class="modal">
+    <div class="modal__background" onclick="closeModal('modalBodyBuilding')"></div>
+    <div class="modal__content">
+      <span class="modal__close" onclick="closeModal('modalBodyBuilding')">&times;</span>
+      <h4>BODY BUILDING</h4>
+      <p>FitPhysique предлагает целостный подход, который включает:</p>
+      <ul>
+        <li>Силовые тренировки: Использование свободных весов и тренажеров для увеличения мышечной силы и массы. Упражнения, такие как приседания, жим лежа и тяга, помогают развивать основные группы мышц.</li>
+        <li>Питание: Индивидуальные планы питания, которые поддерживают процесс наращивания мышечной массы и восстановления после тренировок.</li>
+        <li>Мониторинг прогресса: Регулярные замеры и тесты для отслеживания изменений в теле и корректировки тренировочного процесса.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="modalCardio" class="modal">
+    <div class="modal__background" onclick="closeModal('modalCardio')"></div>
+    <div class="modal__content">
+      <span class="modal__close" onclick="closeModal('modalCardio')">&times;</span>
+      <h4>CARDIO</h4>
+      <p>FitPhysique предлагает целостный подход, который включает:</p>
+      <ul>
+        <li>Разнообразные виды кардио: Бег, плавание, велоспорт и групповые занятия, такие как аэробика и зумба.</li>
+        <li>Интервальные тренировки: Чередование высокоинтенсивных и низкоинтенсивных нагрузок для максимального сжигания калорий и улучшения сердечно-сосудистой системы.</li>
+        <li>Цели: Улучшение обмена веществ, снижение веса и укрепление сердечно-сосудистой системы.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="modalFitness" class="modal">
+    <div class="modal__background" onclick="closeModal('modalFitness')"></div>
+    <div class="modal__content">
+      <span class="modal__close" onclick="closeModal('modalFitness')">&times;</span>
+      <h4>FITNESS</h4>
+      <p>FitPhysique предлагает целостный подход, который включает:</p>
+      <ul>
+        <li>Комплексные фитнес-программы: Сочетание силовых, кардио и функциональных тренировок для достижения гармоничного развития тела.</li>
+        <li>Индивидуальные планы тренировок: Адаптация программ под уровень подготовки каждого клиента, включая упражнения на гибкость, силу и выносливость.</li>
+        <li>Групповые занятия: Поддержка сообщества и мотивация через участие в групповых тренировках.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="modalCrossFit" class="modal">
+    <div class="modal__background" onclick="closeModal('modalCrossFit')"></div>
+    <div class="modal__content">
+      <span class="modal__close" onclick="closeModal('modalCrossFit')">&times;</span>
+      <h4>CROSSFIT</h4>
+      <p>FitPhysique предлагает целостный подход, который включает:</p>
+      <ul>
+        <li>Многосоставных упражнений: Комбинация силовых элементов с кардио для повышения общей физической подготовки.</li>
+        <li>Вариативности тренировок: Постоянная смена упражнений для предотвращения адаптации организма и достижения новых результатов.</li>
+        <li>Командного духа: Занятия проходят в группе, что создает атмосферу поддержки и соревнования среди участников.</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="gallery section">
+    <div class="gallery__container section__container">
+    <h3 class="gallery__title">НАША ГАЛЕРЕЯ</h3>
+      <div class="gallery__grid">
+        <img src="./images/gallery-1.jpg" alt="gallery" />
+        <img src="./images/gallery-2.jpg" alt="gallery" />
+        <img src="./images/gallery-3.jpg" alt="gallery" />
+        <img src="./images/gallery-4.jpg" alt="gallery" />
+        <img src="./images/gallery-5.jpg" alt="gallery" />
+        <img src="./images/gallery-6.jpg" alt="gallery" />
+        <img src="./images/gallery-7.jpg" alt="gallery" />
+        <img src="./images/gallery-8.jpg" alt="gallery" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer section" id="contact">
+    <div class="footer__container section__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+        </div>
+        <ul class="footer__links">
+          <li>
+            <a href="#">
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              ул. 29 октября, г. Тирасполь
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-phone-fill"></i></span>
+              +37377123456
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-mail-fill"></i></span>
+              FitPhysique@gmail.com
+            </a>
+          </li>
+          <li>
+            <p class="footer__bar">
+              FitPhysique © 2025. Все права защищены.
+            </p>
+          </li>
+          <li>
+            <p class="footer__bar">
+              Разработчик: Ердотеску Станислав
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  
+</body>
+</html>

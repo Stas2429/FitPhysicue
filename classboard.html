@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./pages/style.css" rel="stylesheet">
+  <title>FitPhysique</title>
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body class="page">
+  <header class="header">
+    <nav class="header__menu">
+      <div class="header__menu-items">
+        <div class="header__logo">
+          <a href="index.html"> <img src="./images/logo.png" alt="logo"></a>
+        </div>
+        <div class="header__menu-burger" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="header__links" id="header-links">
+        <li><a href="index.html">Основной</a></li>
+        <li><a href="aboutus.html">О нас</a></li>
+        <li><a href="trainers.html">Тренеры</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="classboard.html">Доска занятий</a></li>
+        <li><a href="instruments.html">Инструменты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="schedule section" id="schedule">
+    <div class="schedule__container section__container">
+      <h1 class="schedule__title">РАСПИСАНИЕ ЗАНЯТИЙ</h1>
+      <div class="schedule__filter">
+        <label for="type-filter" class="schedule__label">Фильтр по типу:</label>
+        <select id="type-filter" class="schedule__select">
+          <option value="all">Все</option>
+          <option value="cardio">Кардио</option>
+          <option value="crossfit">Кроссфит</option>
+          <option value="fitness">Фитнес</option>
+          <option value="bodybuilding">Бодибилдинг</option>
+        </select>
+      </div>
+      <div class="schedule__grid">
+        <div class="schedule__day">
+          <h2 class="schedule__day-title">Понедельник</h2>
+          <div class="schedule__item schedule__item--cardio">Кардио - 09:00</div>
+          <div class="schedule__item schedule__item--crossfit">Кроссфит - 10:00</div>
+        </div>
+        <div class="schedule__day">
+          <h2 class="schedule__day-title">Вторник</h2>
+          <div class="schedule__item schedule__item--fitness">Фитнес - 11:00</div>
+          <div class="schedule__item schedule__item--bodybuilding">Бодибилдинг - 12:00</div>
+        </div>
+        <div class="schedule__day">
+          <h2 class="schedule__day-title">Среда</h2>
+          <div class="schedule__item schedule__item--cardio">Кардио - 08:00</div>
+          <div class="schedule__item schedule__item--crossfit">Кроссфит - 09:30</div>
+        </div>
+        <div class="schedule__day">
+          <h2 class="schedule__day-title">Четверг</h2>
+          <div class="schedule__item schedule__item--fitness">Фитнес - 10:00</div>
+          <div class="schedule__item schedule__item--bodybuilding">Бодибилдинг - 11:30</div>
+        </div>
+        <div class="schedule__day">
+          <h2 class="schedule__day-title">Пятница</h2>
+          <div class="schedule__item schedule__item--cardio">Кардио - 09:00</div>
+          <div class="schedule__item schedule__item--fitness">Фитнес - 10:00</div>
+        </div>
+        <div class="schedule__day">
+          <h2 class="schedule__day-title">Суббота</h2>
+          <div class="schedule__item schedule__item--crossfit">Кроссфит - 09:00</div>
+          <div class="schedule__item schedule__item--bodybuilding">Бодибилдинг - 10:30</div>
+        </div>
+        <div class="schedule__day">
+          <h2 class="schedule__day-title">Воскресенье</h2>
+          <div class="schedule__item schedule__item--fitness">Фитнес - 09:00</div>
+          <div class="schedule__item schedule__item--cardio">Кардио - 10:00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking" id="booking">
+    <h1 class="booking__title">Онлайн-запись на тренировку</h1>
+    <form class="booking__form">
+      <label for="name" class="booking__label">Ваше имя:</label>
+      <input type="text" id="name" class="booking__input" required />
+
+      <label for="email" class="booking__label">Ваш email:</label>
+      <input type="email" id="email" class="booking__input" required />
+
+      <label for="session" class="booking__label">Выберите тренировку:</label>
+      <select id="session" class="booking__select">
+        <option value="cardio">Кардио</option>
+        <option value="crossfit">Кроссфит</option>
+        <option value="fitness">Фитнес</option>
+        <option value="bodybuilding">Бодибилдинг</option>
+      </select>
+
+      <label for="day" class="booking__label">Выберите день недели:</label>
+      <select id="day" class="booking__select">
+        <option value="monday">Понедельник</option>
+        <option value="tuesday">Вторник</option>
+        <option value="wednesday">Среда</option>
+        <option value="thursday">Четверг</option>
+        <option value="friday">Пятница</option>
+        <option value="saturday">Суббота</option>
+        <option value="sunday">Воскресенье</option>
+      </select>
+
+      <label for="time" class="booking__label">Выберите время:</label>
+      <select id="time" class="booking__select">
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+      </select>
+
+      <button type="submit" class="booking__button">Записаться</button>
+    </form>
+  </section>
+
+  <section id="countdown" class="countdown">
+    <h1 class="countdown__title">До начала следующего занятия</h1>
+    <div id="timer" class="countdown__timer">00:00:00</div>
+  </section>
+
+  <footer class="footer section" id="contact">
+    <div class="footer__container section__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+        </div>
+        <ul class="footer__links">
+          <li>
+            <a href="#">
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              ул. 29 октября, г. Тирасполь
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-phone-fill"></i></span>
+              +37377123456
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-mail-fill"></i></span>
+              FitPhysique@gmail.com
+            </a>
+          </li>
+          <li>
+            <p class="footer__bar">
+              FitPhysique © 2025. Все права защищены.
+            </p>
+          </li>
+          <li>
+            <p class="footer__bar">
+              Разработчик: Ердотеску Станислав
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

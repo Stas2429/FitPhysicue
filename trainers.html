@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./pages/style.css" rel="stylesheet">
+  <title>FitPhysique</title>
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body class="page">
+  <header class="header">
+    <nav class="header__menu">
+      <div class="header__menu-items">
+        <div class="header__logo">
+          <a href="index.html"> <img src="./images/logo.png" alt="logo"></a>
+        </div>
+        <div class="header__menu-burger" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="header__links" id="header-links">
+        <li><a href="index.html">Основной</a></li>
+        <li><a href="aboutus.html">О нас</a></li>
+        <li><a href="trainers.html">Тренеры</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="classboard.html">Доска занятий</a></li>
+        <li><a href="instruments.html">Инструменты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="trainer section" id="trainer">
+    <div class="trainer__container section__container">
+      <h1 class="trainer__title">ПОЗНАКОМЬТЕСЬ С НАШИМИ ТРЕНЕРАМИ</h1>
+      <div class="trainer__grid">
+        <div class="trainer__card" onclick="openModal('trainer1')">
+          <img src="./images/trainer-1.jpg" alt="trainer" />
+          <h2>ДАВИД ЗАЙЦЕВ</h2>
+          <p>Тренер по бодибилдингу</p>
+          <div class="trainer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+        <div class="trainer__card" onclick="openModal('trainer2')">
+          <img src="./images/trainer-2.jpg" alt="trainer" />
+          <h2>НАТАЛЬЯ МИРОНОВА</h2>
+          <p>Тренер по кардио</p>
+          <div class="trainer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+        <div class="trainer__card" onclick="openModal('trainer3')">
+          <img src="./images/trainer-3.jpg" alt="trainer" />
+          <h2>СЕРГЕЙ ЛУЖНИКОВ</h2>
+          <p>Фитнес-тренер</p>
+          <div class="trainer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+        <div class="trainer__card" onclick="openModal('trainer4')">
+          <img src="./images/trainer-4.jpg" alt="trainer" />
+          <h2>СОФИЯ НАУМОВА</h2>
+          <p>Тренер по кроссфиту</p>
+          <div class="trainer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="trainer1">
+    <div class="modal__background" onclick="closeModal('trainer1')"></div>
+    <div class="modal__content">
+      <span class="modal__close" onclick="closeModal('trainer1')">&times;</span>
+      <h3>ДАВИД ЗАЙЦЕВ</h3>
+      <p>
+        Тренер по бодибилдингу с более чем 10-летним опытом. Специализируется на индивидуальных тренировках, которые помогают клиентам достигать максимальных результатов в наращивании мышечной массы и улучшении физической формы. Давид
+        разрабатывает персонализированные программы, учитывающие уровень подготовки и цели каждого клиента. Его подход включает не только силовые тренировки, но и рекомендации по питанию, что позволяет обеспечить комплексный подход к
+        тренировочному процессу. Он активно участвует в семинарах и мастер-классах, делясь своим опытом с другими тренерами и спортсменами.
+      </p>
+    </div>
+  </div>
+  <div class="modal" id="trainer2">
+    <div class="modal__background" onclick="closeModal('trainer2')"></div>
+    <div class="modal__content">
+      <span class="modal__close" onclick="closeModal('trainer2')">&times;</span>
+      <h3>НАТАЛЬЯ МИРОНОВА</h3>
+      <p>
+        Эксперт по кардио-тренировкам с обширным опытом работы. Она помогает своим клиентам улучшить сердечно-сосудистую систему и достигать лучших результатов в кардионагрузках. Наталья разрабатывает программы, включающие как
+        традиционные виды кардио, такие как бег и велоспорт, так и более современные подходы, например, HIIT (высокоинтенсивные интервальные тренировки). Она акцентирует внимание на важности правильного дыхания и восстановления после
+        тренировок, что способствует улучшению общей выносливости и физического состояния клиентов.
+      </p>
+    </div>
+  </div>
+  <div class="modal" id="trainer3">
+    <div class="modal__background" onclick="closeModal('trainer3')"></div>
+    <div class="modal__content">
+      <span class="modal__close" onclick="closeModal('trainer3')">&times;</span>
+      <h3>СЕРГЕЙ ЛУЖНИКОВ</h3>
+      <p>
+        Фитнес-тренер с многолетним опытом в проведении как групповых, так и персональных тренировок. Он является специалистом по похудению и набору мышечной массы, что позволяет ему эффективно работать с клиентами с различными целями.
+        Сергей использует разнообразные методики тренировок, включая функциональные упражнения и силовые тренировки, чтобы помочь клиентам достичь их желаемых результатов. Его подход включает в себя не только физическую активность, но и
+        психологическую поддержку, что делает занятия более продуктивными и мотивирующими.
+      </p>
+    </div>
+  </div>
+  <div class="modal" id="trainer4">
+    <div class="modal__background" onclick="closeModal('trainer4')"></div>
+    <div class="modal__content">
+      <span class="modal__close" onclick="closeModal('trainer4')">&times;</span>
+      <h3>СОФИЯ НАУМОВА</h3>
+      <p>
+        Тренер по кроссфиту, которая помогает своим клиентам достичь максимальной физической формы. Она разрабатывает интенсивные программы тренировок, которые включают элементы силовой подготовки, кардио и функциональных упражнений.
+        София акцентирует внимание на командном духе и поддержке среди участников, что создает мотивационную атмосферу во время занятий. Ее методика направлена на развитие силы, выносливости и координации движений, что делает тренировки
+        не только эффективными, но и увлекательными для клиентов всех уровней подготовки.
+      </p>
+    </div>
+  </div>
+
+  <footer class="footer section" id="contact">
+    <div class="footer__container section__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+        </div>
+        <ul class="footer__links">
+          <li>
+            <a href="#">
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              ул. 29 октября, г. Тирасполь
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-phone-fill"></i></span>
+              +37377123456
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-mail-fill"></i></span>
+              FitPhysique@gmail.com
+            </a>
+          </li>
+          <li>
+            <p class="footer__bar">
+              FitPhysique © 2025. Все права защищены.
+            </p>
+          </li>
+          <li>
+            <p class="footer__bar">
+              Разработчик: Ердотеску Станислав
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
