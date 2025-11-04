@@ -1,0 +1,70 @@
+.session__card {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+  
+.session__card:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../images/session-1.jpg");
+}
+  
+.session__card:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../images/session-2.jpg");
+}
+  
+.session__card:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../images/session-3.jpg");
+}
+  
+.session__card:nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../images/session-4.jpg");
+}
+  
+.session__card h3 {
+    position: relative;
+    isolation: isolate;
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+  
+.session__card h3::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -5px;
+    height: 25px;
+    aspect-ratio: 1;
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+  
+.session__card p {
+    max-width: 350px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    color: var(--extra-light);
+}
+
+@media (width > 540px) {
+    .session__card {
+      padding: 7rem 2rem;
+    }
+}
+
+@media (width > 768px){
+
+    .session__card {
+      padding: 10rem 2rem;
+    }
+}

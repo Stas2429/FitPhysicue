@@ -1,0 +1,7 @@
+.section__header {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--header-font);
+  color: var(--text-dark);
+  text-align: center;
+}

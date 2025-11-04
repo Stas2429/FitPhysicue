@@ -1,0 +1,62 @@
+.swiper {
+    margin-top: 2rem; /* Отступ сверху */
+    padding-bottom: 3rem; /* Отступ снизу */
+    border-radius: 15px; /* Скругление углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень слайдера */
+}
+
+.swiper-slide {
+    flex-shrink: 0; /* Отключаем уменьшение */
+    width: 100%; /* Каждый слайд занимает 100% ширины контейнера */
+    height: auto; /* Высота автоматически подстраивается */
+    display: flex;
+    flex: 1 0 auto; /* Устанавливаем ширину одной карточки */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.swiper-pagination-bullet {
+    background: var(--primary-color);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--primary-color);
+    transform: scale(1.2);
+}

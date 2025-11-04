@@ -1,0 +1,37 @@
+.about__card h2 {
+    position: relative;
+    isolation: isolate;
+    margin-bottom: 1rem;
+    padding-top: 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+}
+  
+.about__card h2::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 6rem;
+    line-height: 6rem;
+    color: var(--text-dark);
+    opacity: 0.1;
+    z-index: -1;
+}
+  
+.about__card:nth-child(1) h2::before {
+    content: "01";
+}
+  
+.about__card:nth-child(2) h2::before {
+    content: "02";
+}
+  
+.about__card:nth-child(3) h2::before {
+    content: "03";
+}
+  
+.about__card p {
+    color: var(--text-light);
+}

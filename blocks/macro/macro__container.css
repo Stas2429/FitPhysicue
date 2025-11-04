@@ -1,0 +1,19 @@
+.macro__container input{
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid var(--text-light);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: var(--header-font);
+}
+  
+.macro__container .btn {
+    color: var(--white);
+    background-color: var(--text-light);
+    font-family: var(--header-font);
+}
+  
+.macro__container .btn:hover {
+    background-color: var(--primary-color);
+}

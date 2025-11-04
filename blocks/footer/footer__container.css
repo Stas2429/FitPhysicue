@@ -1,0 +1,12 @@
+.footer__container {
+  display: grid;
+  gap: 4rem 2rem;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    grid-template-columns: 1fr; /* Вертикальная компоновка для экранов до 768px */
+    text-align: center; /* Центрирование текста */
+  }
+}

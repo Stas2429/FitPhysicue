@@ -1,0 +1,13 @@
+.about__info {
+  text-align: center;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (width > 768px){
+  .about__info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+}

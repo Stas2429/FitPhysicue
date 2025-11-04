@@ -1,0 +1,19 @@
+.footer__links {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.footer__links a {
+    color: var(--text-light);
+}
+
+.footer__links a:hover {
+    color: var(--white);
+}
+
+.footer__links a span {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}

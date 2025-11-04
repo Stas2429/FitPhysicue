@@ -1,0 +1,5 @@
+.schedule__day-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}

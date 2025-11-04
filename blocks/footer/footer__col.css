@@ -1,0 +1,10 @@
+.footer__col {
+    display: flex;
+    flex-direction: column; /* Вертикальная компоновка по умолчанию */
+    align-items: center; /* Центрирование содержимого */
+  }
+
+.footer__col p {
+    color: var(--text-light);
+    text-align: center;
+}

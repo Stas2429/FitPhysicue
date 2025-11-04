@@ -1,0 +1,9 @@
+.session {
+    display: grid;
+}
+
+@media (width > 768px){
+  .session {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
