@@ -1,0 +1,11 @@
+.header__menu-burger {
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+@media (width > 768px){
+  .header__menu-burger {
+    display: none;
+  }
+}
