@@ -1,17 +1,12 @@
 .header__menu-burger {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--white);
-  background-color: var(--text-dark);
   font-size: 1.5rem;
+  color: var(--white);
   cursor: pointer;
 }
 
 @media (width > 768px){
   .header__menu-burger {
-    padding: 0;
-    background-color: transparent;
+    display: none;
   }
 }
+
