@@ -1,5 +1,5 @@
 # КУРСОВАЯ РАБОТА. Веб-сайт для фитнес-центра
-## FitPhysicue
+## FitPhysique
 
 Ссылка на проект: https://stas2429.github.io/FitPhysicue/
 
