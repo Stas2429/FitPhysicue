@@ -1,7 +1,7 @@
 # КУРСОВАЯ РАБОТА. Веб-сайт для фитнес-центра
 ## FitPhysique
 
-Ссылка на проект: https://stas2429.github.io/FitPhysicue/
+Ссылка на проект: https://stas2429.github.io/FitPhysique/
 
 ## Технологии
 - [WEBSITE PLANET](https://www.websiteplanet.com/ru/)
